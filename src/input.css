@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    a {
+        @apply selection:!text-black selection:!bg-amber-600;
+    }
+}
+@layer components {
+    .header-white {
+        @apply text-xl lg:text-[1.75rem]/9 xl:text-3xl text-white font-bold;
+    }
+    .link-white-bold {
+        @apply text-base md:text-sm lg:text-base font-bold text-slate-300 hover:text-white;
+    }
+    .link-sky {
+        @apply text-sky-500 hover:text-sky-300;
+    }
+    .link-amber {
+        @apply font-medium text-base md:text-sm lg:text-base text-amber-500 hover:text-amber-400 underline underline-offset-4 hover:decoration-2;
+    }
+    .badge-gray {
+        @apply bg-gray-500/40 rounded-lg px-2 py-1;
+    }
+}

@@ -8,104 +8,315 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800&display=swap" rel="stylesheet">
         <title>Developer Portfolio Website</title>
     </head>
-    <body class="text-slate-400 selection:text-slate-800 bg-slate-900 selection:bg-amber-500">
+    <body class="text-slate-400 selection:text-slate-800 selection:bg-amber-500 bg-slate-900 md:bg-gradient-to-bl md:from-[#041e49] md:from-0% md:to-slate-900 md:to-20%">
+    <div class="container mx-auto">
         <!-- Navbar -->
-        <nav class="relative container mx-auto">
-            <!-- Flex container -->
+        <nav class="relative">
+            <!-- Flex block -->
             <div class="flex items-center justify-between text-slate-300 py-5">
                 <!-- Icons -->
                 <div class="flex space-x-4">
                     <a href="https://github.com/ceo777" target="_blank" class="block hover:text-white"><span class="sr-only">GitHub</span><svg viewBox="0 0 16 16" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+                    <a href="https://devpost.com/dubnov/challenges" target="_blank" class="hidden block hover:text-white"><span class="sr-only">Devpost</span><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"></path></svg></a>
                     <a href="https://linkedin.com/in/dubnov" target="_blank" class="block hover:text-white"><span class="sr-only">LinkedIn</span><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
                     <a href="https://profile.codersrank.io/user/ceo777/" target="_blank" class="block hover:text-white"><span class="sr-only">LinkedIn</span><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M23.134 8.64l-5.973-3.62a.286.286 0 0 0-.412.125l-1.4 3.286 2.842 1.696a.53.53 0 0 1 0 .921l-5.335 3.14-2.267 5.274a.127.127 0 0 0 .052.203.122.122 0 0 0 .134-.035l3.914-2.365 1.545 2.219a.373.373 0 0 0 .309.167h3.708a.367.367 0 0 0 .327-.2.382.382 0 0 0-.018-.386l-2.513-3.852 5.088-3.077c.577-.349.865-.74.865-1.172V9.813c0-.433-.288-.823-.866-1.172zM13.082 4.35L.845 12.052c-.577.348-.858.739-.845 1.171v1.173c.014.432.303.816.866 1.15l6.056 3.496a.286.286 0 0 0 .412-.146l1.36-3.286-2.884-1.633a.518.518 0 0 1-.275-.384.529.529 0 0 1 .254-.537l5.295-3.245 2.183-5.316a.128.128 0 0 0-.04-.142.122.122 0 0 0-.146-.005z"></path></svg></a>
                 </div>
                 <!-- Menu items -->
                 <div class="hidden md:flex space-x-8 tracking-widest font-medium text-slate-300">
-                    <a href="#awards" class="hover:text-white selection:text-black selection:bg-amber-600">Awards</a>
-                    <a href="#projects" class="hover:text-white selection:text-black selection:bg-amber-600">Projects</a>
-                    <a href="#contacts" class="hover:text-white selection:text-black selection:bg-amber-600">Contacts</a>
+                    <a href="#awards" class="hover:text-white">Awards</a>
+                    <a href="#projects" class="hover:text-white">Projects</a>
+                    <a href="#contacts" class="hover:text-white">Contacts</a>
                 </div>
             </div>
         </nav>
         <!-- Hero section -->
         <section id="about">
-            <!-- Flex container -->
-            <div class="container flex flex-col md:flex-row mx-auto mt-32">
-                <!-- Left -->
-                <div class="flex flex-col md:w-1/2 items-center md:items-start text-left space-y-4">
+            <!-- Flex block -->
+            <div class="flex flex-col md:flex-row mt-24 md:mt-32">
+                <!-- Starting block -->
+                <div class="flex flex-col md:w-1/2 items-start text-left space-y-4">
                     <!-- Name -->
-                    <h1 class="text-6xl md:text-5xl lg:text-6xl text-white font-bold">I'm John Doe</h1>
+                    <h1 class="text-5xl lg:text-6xl text-white font-bold ">Oleg Dubnov</h1>
                     <!-- Role -->
-                    <span class="text-2xl md:text-xl lg:text-2xl text-slate-300 tracking-wide md:tracking-normal lg:tracking-wide font-extralight">Backend and Blockchain developer</span>
+                    <span class="text-xl lg:text-2xl text-slate-300 tracking-wide md:tracking-normal lg:tracking-wide font-extralight">Full-Stack and Blockchain developer</span>
                 </div>
-                <!-- Right -->
-                <div class="flex flex-col md:w-1/2 items-start text-justify mt-12 md:m-0">
+                <!-- Ending block -->
+                <div class="flex flex-col md:w-1/2 items-start text-justify mt-20 md:m-0">
                     <!-- About -->
                     <div>
-                        <p class="text-base md:text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a href="#" target="_blank" class="text-sky-500 hover:text-sky-300 selection:text-black selection:bg-amber-600">exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui <a href="#" target="_blank" class="text-sky-500 hover:text-sky-300 selection:text-black selection:bg-amber-600">officia deserunt</a> mollit anim id est <a href="#" target="_blank" class="text-sky-500 hover:text-sky-300 selection:text-black selection:bg-amber-600">laborum</a>.</p>
+                        <p class="text-base md:text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a href="#" target="_blank" class="link-sky">exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui <a href="#" target="_blank" class="link-sky">officia deserunt</a> mollit anim id est <a href="#" target="_blank" class="link-sky">laborum</a>.</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Awards -->
         <section id="awards">
-            <div class="container mx-auto mt-32 md:mt-40">
-                <h2 class="text-2xl text-slate-200 tracking-wider">Awards</h2>
-            </div>
-            <!-- Flex container -->
-            <div class="container flex flex-col md:flex-row mx-auto items-center md:items-start justify-between mt-12">
-                <!-- Left -->
-                <div class="md:w-1/4 text-left">
-                    <img src="img/metabuild-3-hackathon_1400x700.png" alt="NEAR MetaBUILD III Hackathon" class="w-full block md:hidden" aria-hidden="true">
-                    <img src="img/metabuild-3-hackathon_300x300.png" alt="NEAR MetaBUILD III Hackathon" class="hidden md:block md:w-40 md:h-40 lg:w-56 lg:h-56" aria-hidden="true">
+            <h2 class="text-2xl text-slate-200 tracking-wider mt-32 md:mt-40">Awards</h2>
+            <!-- NEAR MetaBUILD III Hackathon -->
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between mt-12">
+                <!-- Image -->
+                <div class="md:w-[30%]">
+                    <img src="img/metabuild-3-hackathon_600x300@2x.png" alt="NEAR MetaBUILD III Hackathon" class="w-full block md:hidden" aria-hidden="true">
+                    <img src="img/metabuild-3-hackathon_300x300@2x.png" alt="NEAR MetaBUILD III Hackathon" class="hidden md:block md:w-48 md:h-48 lg:w-56 lg:h-56" aria-hidden="true">
                 </div>
-                <!-- Right -->
+                <!-- Description -->
                 <div class="flex flex-col md:w-[70%] text-left mt-5 md:m-0">
-                    <h3 class="text-2xl md:text-[22px] lg:text-3xl text-white font-bold">NEAR MetaBUILD III Hackathon Winner</h3>
-                    <p class="text-base md:text-sm lg:text-base text-justify lg:text-left mt-3">One of the biggest Web3 hackathons in the world with a total prize pool of $940,000 and 3088 participants from all over the planet by <a href="https://near.org" target="_blank" class="text-sky-500 hover:text-sky-300 selection:text-black selection:bg-amber-600">NEAR Foundation</a>.</p>
-                    <div class="flex flex-row lg:flex-col justify-between mt-6">
-                        <a href="https://devpost.com/software/diesel-attack" target="_blank" class="max-w-fit text-amber-500 selection:text-black selection:bg-amber-600 font-medium underline underline-offset-4 hover:decoration-2">Project page on Devpost &#8599</a>
-                        <span class="max-w-fit text-sm lg:mt-10">2022</span>
+                    <h4 class="header-white">NEAR MetaBUILD III Hackathon Winner</h4>
+                    <p class="text-base md:text-sm lg:text-base text-justify xl:text-left mt-3">One of the biggest Web3 hackathons in the world with a total prize pool of $940,000 and 3088 participants from all over the planet by <a href="https://near.org" target="_blank" class="link-sky">NEAR Foundation</a>.</p>
+                    <div class="flex mt-4"><a href="#diesel-attack-near" class="link-white-bold">Diesel Attack NFT Game (NEAR)</a></div>
+                    <div class="flex flex-row lg:flex-col items-end md:items-start justify-between mt-2">
+                        <div class="flex flex-wrap flex-col md:flex-row justify-start">
+                            <a href="https://devpost.com/software/diesel-attack" target="_blank" class="link-amber mt-2 mr-5">Project page on Devpost &nearr;</a>
+                            <a href="https://metabuild.devpost.com/" target="_blank" class="link-amber mt-2 mr-5">MetaBUILD III Hackathon &nearr;</a>
+                        </div>
+                        <div class="text-sm mt-4 md:mt-2 lg:mt-4">2022</div>
                     </div>
                 </div>
             </div>
-            <!-- Flex container -->
-            <div class="container flex flex-col md:flex-row mx-auto items-center md:items-start justify-between mt-14">
-                <!-- Left -->
-                <div class="md:w-1/4">
-                    <img src="img/hack-a-tonx-hackathon_1600x800.png" alt="NEAR MetaBUILD III Hackathon" class="w-full block md:hidden" aria-hidden="true">
-                    <img src="img/hack-a-tonx-hackathon_300x300.png" alt="NEAR MetaBUILD III Hackathon" class="hidden md:block md:w-40 md:h-40 lg:w-56 lg:h-56" aria-hidden="true">
+            <!-- Hack-a-TONx DoraHacks QF Round -->
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between mt-14">
+                <!-- Image -->
+                <div class="md:w-[30%]">
+                    <img src="img/hack-a-tonx-hackathon_600x300@2x.png" alt="Hack-a-TONx DoraHacks Hackathon" class="w-full block md:hidden" aria-hidden="true">
+                    <img src="img/hack-a-tonx-hackathon_300x300@2x.png" alt="Hack-a-TONx DoraHacks Hackathon" class="hidden md:block md:w-48 md:h-48 lg:w-56 lg:h-56" aria-hidden="true">
                 </div>
-                <!-- Right -->
+                <!-- Description -->
                 <div class="flex flex-col md:w-[70%] text-left mt-5 md:m-0">
-                    <h3 class="text-2xl md:text-[22px] lg:text-3xl text-white font-bold">Hack-a-TONx DoraHacks QF Round Grantee</h3>
-                    <p class="text-base md:text-sm lg:text-base text-justify lg:text-left mt-3">Community Quadratic Funding Round of the Hack-a-TONx DoraHacks hackathon with a total prize pool of $300,000 and 233 high-quality projects on the <a href="https://ton.org" target="_blank" class="text-sky-500 hover:text-sky-300 selection:text-black selection:bg-amber-600">TON Blockchain</a>.</p>
-                    <div class="flex flex-row lg:flex-col justify-between mt-6">
-                        <a href="https://dorahacks.io/buidl/4206" target="_blank" class="max-w-fit text-amber-500 selection:text-black selection:bg-amber-600 font-medium underline underline-offset-4 hover:decoration-2">Project page on DoraHacks &#8599</a>
-                        <span class="max-w-fit text-sm lg:mt-10">2023</span>
+                    <h4 class="header-white">Hack-a-TONx DoraHacks QF Round Grantee</h4>
+                    <p class="text-base md:text-sm lg:text-base text-justify xl:text-left mt-3">Community Quadratic Funding Round of the Hack-a-TONx DoraHacks hackathon with a total prize pool of $300,000 and 233 high-quality projects on the <a href="https://ton.org" target="_blank" class="link-sky">TON Blockchain</a>.</p>
+                    <div class="flex mt-4"><a href="#diesel-attack-ton" class="link-white-bold">Diesel Attack NFT Game (TON)</a></div>
+                    <div class="flex flex-row lg:flex-col items-end md:items-start justify-between mt-2">
+                        <div class="flex flex-wrap flex-col md:flex-row justify-start">
+                            <a href="https://dorahacks.io/buidl/4206" target="_blank" class="link-amber mt-2 mr-5">Project page on DoraHacks &nearr;</a>
+                            <a href="https://dorahacks.io/grant/ton-grant/buidl" target="_blank" class="link-amber mt-2 mr-5">Hack-a-TONx QF Round &nearr;</a>
+                        </div>
+                        <div class="text-sm mt-4 md:mt-2 lg:mt-4">2023</div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Projects -->
         <section id="projects">
-            <div class="container mx-auto mt-32 md:mt-40">
-                <h2 class="text-2xl text-slate-200 tracking-wider">Projects</h2>
-            </div>
-            <!-- Flex container -->
-            <div class="container ">
-
-            </div>
+            <h2 class="text-2xl text-slate-200 tracking-wider mt-20 pt-4">Projects</h2>
+            <!-- Blockchain projects -->
+            <section id="blockchain-projects">
+                <h3 class="text-lg tracking-wide mt-4 pt-4 md:mb-2">Blockchain</h3>
+                <!-- Diesel Attack NFT Game Backend Server (TON) -->
+                <section id="diesel-attack-ton">
+                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between pt-10 pb-4">
+                        <!-- Image -->
+                        <div class="md:w-[30%]">
+                            <img src="img/diesel-attack-banner_600x300@2x.png" alt="Diesel Attack NFT Game Backend Server (TON)" class="w-full block md:hidden" aria-hidden="true">
+                            <img src="img/diesel-attack-banner_300x300@2x.png" alt="Diesel Attack NFT Game Backend Server (TON)" class="hidden md:block md:w-48 md:h-48 lg:w-56 lg:h-56" aria-hidden="true">
+                        </div>
+                        <!-- Description -->
+                        <div class="flex flex-col md:w-[70%] text-left mt-5 md:m-0">
+                            <h4 class="header-white">Diesel Attack NFT Game <span class="md:hidden">API</span><span class="hidden md:inline">Backend</span> Server (TON)</h4>
+                            <p class="text-base md:text-sm lg:text-base text-justify lg:text-left mt-3">Community Quadratic Funding Round of the Hack-a-TONx DoraHacks hackathon with a total prize pool of $300,000 and 233 high-quality projects on the <a href="https://ton.org" target="_blank" class="link-sky">TON Blockchain</a>.</p>
+                            <div class="flex flex-wrap flex-row text-slate-300 text-sm md:text-xs font-medium mt-2">
+                                <div class="badge-gray mt-2 mr-2">FunC</div>
+                                <div class="badge-gray mt-2 mr-2">TypeScript</div>
+                                <div class="badge-gray mt-2 mr-2">Node.js</div>
+                                <div class="badge-gray mt-2 mr-2">Fastify</div>
+                                <div class="badge-gray mt-2 mr-2">Unity</div>
+                                <div class="badge-gray mt-2 mr-2">WebGL</div>
+                                <div class="badge-gray mt-2 mr-2">TON</div>
+                                <div class="badge-gray mt-2 mr-2">Orbs RPC</div>
+                                <div class="badge-gray mt-2 mr-2">IPFS</div>
+                                <div class="badge-gray mt-2 mr-2">AWS</div>
+                            </div>
+                            <div class="flex flex-row lg:flex-col items-end md:items-start justify-between mt-2">
+                                <div class="flex flex-wrap flex-col md:flex-row justify-start">
+                                    <a href="https://dieselattack.com" target="_blank" class="hidden lg:block link-amber mt-2 mr-5">Play Game Online &nearr;</a>
+                                    <a href="https://getgems.io/collection/EQB4LidmxGVV2_73UBiAAyQ8nv30u1SRP5_qIpv6UZPG_DOB" target="_blank" class="link-amber mt-2 mr-5">NFT Collection &nearr;</a>
+                                    <a href="https://tonscan.org/address/EQB4LidmxGVV2_73UBiAAyQ8nv30u1SRP5_qIpv6UZPG_DOB" target="_blank" class="lg:hidden link-amber mt-2 mr-5">Smart contract on TON Explorer &nearr;</a>
+                                    <a href="https://dorahacks.io/buidl/4206" target="_blank" class="link-amber mt-2 mr-5">Project page on DoraHacks &nearr;</a>
+                                    <a href="https://github.com/ceo777/diesel-attack-ton-nft" target="_blank" class="link-amber mt-2 mr-5">GitHub &nearr;</a>
+                                </div>
+                                <div class="text-sm mt-4 md:mt-2 lg:mt-4">2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Diesel Attack NFT Game Backend Server (NEAR) -->
+                <section id="diesel-attack-near">
+                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between pt-10 pb-4">
+                        <!-- Image -->
+                        <div class="md:w-[30%] text-left">
+                            <img src="img/diesel-attack-nft-game-whale_600x336@2x.png" alt="Diesel Attack NFT Game Backend Server (NEAR)" class="w-full block md:hidden" aria-hidden="true">
+                            <img src="img/diesel-attack-nft-game-whale_300x300@2x.png" alt="Diesel Attack NFT Game Backend Server (NEAR)" class="hidden md:block md:w-48 md:h-48 lg:w-56 lg:h-56" aria-hidden="true">
+                        </div>
+                        <!-- Description -->
+                        <div class="flex flex-col md:w-[70%] text-left mt-5 md:m-0">
+                            <h4 class="header-white">Diesel Attack NFT Game <span class="md:hidden">API</span><span class="hidden md:inline">Backend</span> Server (NEAR)</h4>
+                            <p class="text-base md:text-sm lg:text-base text-justify lg:text-left mt-3">One of the biggest Web3 hackathons in the world with a total prize pool of $940,000 and 3088 participants from all over the planet by <a href="https://near.org" target="_blank" class="link-sky">NEAR Foundation</a>.</p>
+                            <div class="flex flex-wrap flex-row text-slate-300 text-sm md:text-xs font-medium mt-2">
+                                <div class="badge-gray mt-2 mr-2">Rust</div>
+                                <div class="badge-gray mt-2 mr-2">JavaScript</div>
+                                <div class="badge-gray mt-2 mr-2">Node.js</div>
+                                <div class="badge-gray mt-2 mr-2">Fastify</div>
+                                <div class="badge-gray mt-2 mr-2">Unity</div>
+                                <div class="badge-gray mt-2 mr-2">NEAR SDK</div>
+                                <div class="badge-gray mt-2 mr-2">IPFS</div>
+                                <div class="badge-gray mt-2 mr-2">AWS</div>
+                            </div>
+                            <div class="flex flex-row lg:flex-col items-end md:items-start justify-between mt-2">
+                                <div class="flex flex-wrap flex-col md:flex-row justify-start">
+                                    <a href="https://dieselattack.com/downloads/DieselAttack-Win64.zip" target="_blank" class="hidden link-amber mt-2 mr-5">Download Game (Win64) &darr;</a>
+                                    <a href="https://explorer.testnet.near.org/accounts/nfts.dieselattack.testnet" target="_blank" class="link-amber mt-2 mr-5">Smart contract on NEAR Explorer &nearr;</a>
+                                    <a href="https://devpost.com/software/diesel-attack" target="_blank" class="link-amber mt-2 mr-5">Project page on Devpost &nearr;</a>
+                                    <a href="https://github.com/ceo777/diesel-attack-nft" target="_blank" class="link-amber mt-2 mr-5">GitHub &nearr;</a>
+                                </div>
+                                <div class="text-sm mt-4 md:mt-2 lg:mt-4">2022</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- Backend projects -->
+            <section id="backend-projects">
+                <h3 class="text-lg tracking-wide mt-6 pt-4">Backend</h3>
+                <!-- MirrorNet Poster Telegram Bot -->
+                <section id="poster-telegram-bot">
+                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between pt-10 pb-4">
+                        <!-- Image -->
+                        <div class="md:w-[30%]">
+                            <img src="img/diesel-attack-banner_600x300@2x.png" alt="MirrorNet Poster Telegram Bot" class="w-full block md:hidden" aria-hidden="true">
+                            <img src="img/diesel-attack-banner_300x300@2x.png" alt="MirrorNet Poster Telegram Bot" class="hidden md:block md:w-48 md:h-48 lg:w-56 lg:h-56" aria-hidden="true">
+                        </div>
+                        <!-- Description -->
+                        <div class="flex flex-col md:w-[70%] text-left mt-5 md:m-0">
+                            <h4 class="header-white">MirrorNet Poster Telegram Bot</h4>
+                            <p class="text-base md:text-sm lg:text-base text-justify lg:text-left mt-3">Community Quadratic Funding Round of the Hack-a-TONx DoraHacks hackathon with a total prize pool of $300,000 and 233 high-quality projects on the TON Blockchain.</p>
+                            <div class="flex flex-wrap flex-row text-slate-300 text-sm md:text-xs font-medium mt-2">
+                                <div class="badge-gray mt-2 mr-2">TypeScript</div>
+                                <div class="badge-gray mt-2 mr-2">Node.js</div>
+                                <div class="badge-gray mt-2 mr-2">PostgreSQL</div>
+                                <div class="badge-gray mt-2 mr-2">Telegram Bot API</div>
+                                <div class="badge-gray mt-2 mr-2">AWS</div>
+                            </div>
+                            <div class="flex flex-row lg:flex-col items-end md:items-start justify-between mt-2">
+                                <div class="flex flex-wrap flex-col md:flex-row justify-start">
+                                    <a href="https://t.me/ad_net_bot" target="_blank" class="link-amber mt-2 mr-5">Telegram Bot &nearr;</a>
+                                </div>
+                                <div class="text-sm mt-4 md:mt-2 lg:mt-4">2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- Frontend projects -->
+            <section id="frontend-projects">
+                <h3 class="hidden text-lg tracking-wide mt-14">Frontend</h3>
+            </section>
+            <!-- iOS projects -->
+            <section id="ios-projects">
+                <h3 class="hidden text-lg tracking-wide mt-14">iOS</h3>
+            </section>
+            <!-- Design projects -->
+            <section id="design-projects">
+                <h3 class="text-lg tracking-wide mt-14">Design</h3>
+                <!-- Domain Names Mini-Marketplace -->
+                <section id="domain-names-marketplace">
+                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between pt-10 pb-4">
+                        <!-- Image -->
+                        <div class="md:w-[30%]">
+                            <img src="img/domain-names-marketplace_600x312@2x.png" alt="Domain Names Mini-Marketplace" class="w-full block md:hidden" aria-hidden="true">
+                            <img src="img/domain-names-marketplace_300x300@2x.png" alt="Domain Names Mini-Marketplace" class="hidden md:block md:w-48 md:h-48 lg:w-56 lg:h-56" aria-hidden="true">
+                        </div>
+                        <!-- Description -->
+                        <div class="flex flex-col md:w-[70%] text-left mt-5 md:m-0">
+                            <h4 class="header-white">Domain Names Mini-Marketplace</h4>
+                            <p class="text-base md:text-sm lg:text-base text-justify lg:text-left mt-3">Community Quadratic Funding Round of the Hack-a-TONx DoraHacks hackathon with a total prize pool of $300,000 and 233 high-quality projects on the TON Blockchain.</p>
+                            <div class="flex flex-wrap flex-row text-slate-300 text-sm md:text-xs font-medium mt-2">
+                                <div class="badge-gray mt-2 mr-2">Tilda</div>
+                            </div>
+                            <div class="flex flex-row lg:flex-col items-end md:items-start justify-between mt-2">
+                                <div class="flex flex-wrap flex-col md:flex-row justify-start">
+                                    <a href="https://premiumdomains.tilda.ws" target="_blank" class="link-amber mt-2 mr-5">Official Website &nearr;</a>
+                                </div>
+                                <div class="text-sm mt-4 md:mt-2 lg:mt-4">2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Real Estate Service Prototype -->
+                <section id="real-estate-service-prototype">
+                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between pt-10 pb-4">
+                        <!-- Image -->
+                        <div class="md:w-[30%]">
+                            <img src="img/real-estate-service_600x312@2x.png" alt="Real Estate Service Prototype" class="w-full block md:hidden" aria-hidden="true">
+                            <img src="img/real-estate-service_300x300@2x.png" alt="Real Estate Service Prototype" class="hidden md:block md:w-48 md:h-48 lg:w-56 lg:h-56" aria-hidden="true">
+                        </div>
+                        <!-- Description -->
+                        <div class="flex flex-col md:w-[70%] text-left mt-5 md:m-0">
+                            <h4 class="header-white">Real Estate Service Prototype</h4>
+                            <p class="text-base md:text-sm lg:text-base text-justify lg:text-left mt-3">Community Quadratic Funding Round of the Hack-a-TONx DoraHacks hackathon with a total prize pool of $300,000 and 233 high-quality projects on the TON Blockchain.</p>
+                            <div class="flex flex-row lg:flex-col items-end md:items-start justify-between mt-2">
+                                <div class="flex flex-wrap flex-row text-slate-300 text-sm md:text-xs font-medium mt-2">
+                                    <div class="badge-gray mt-2 mr-2">Figma</div>
+                                </div>
+                                <div class="text-sm mt-4 md:mt-2 lg:mt-4">2022</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Premium Apartment Sale Website -->
+                <section id="premium-apartment-sale-website">
+                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between pt-10 pb-4">
+                        <!-- Image -->
+                        <div class="md:w-[30%]">
+                            <img src="img/premium-apartment-sale-website_600x312@2x.png" alt="Premium Apartment Sale Website" class="w-full block md:hidden" aria-hidden="true">
+                            <img src="img/premium-apartment-sale-website_300x300@2x.png" alt="Premium Apartment Sale Website" class="hidden md:block md:w-48 md:h-48 lg:w-56 lg:h-56" aria-hidden="true">
+                        </div>
+                        <!-- Description -->
+                        <div class="flex flex-col md:w-[70%] text-left mt-5 md:m-0">
+                            <h4 class="header-white">Premium Apartment Sale Website</h4>
+                            <p class="text-base md:text-sm lg:text-base text-justify lg:text-left mt-3">Community Quadratic Funding Round of the Hack-a-TONx DoraHacks hackathon with a total prize pool of $300,000 and 233 high-quality projects on the TON Blockchain.</p>
+                            <div class="flex flex-wrap flex-row text-slate-300 text-sm md:text-xs font-medium mt-2">
+                                <div class="badge-gray mt-2 mr-2">Tilda</div>
+                            </div>
+                            <div class="flex flex-row lg:flex-col items-end md:items-start justify-between mt-2">
+                                <div class="flex flex-wrap flex-col md:flex-row justify-start">
+                                    <a href="https://dom-mosfilm-8.ru" target="_blank" class="link-amber mt-2 mr-5">Official Website &nearr;</a>
+                                </div>
+                                <div class="text-sm mt-4 md:mt-2 lg:mt-4">2021</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Premium Apartment Presentation Brochure -->
+                <section id="premium-apartment-presentation-brochure">
+                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between pt-10 pb-4">
+                        <!-- Image -->
+                        <div class="md:w-[30%]">
+                            <img src="img/premium-apartment-brochure_600x315@2x.png" alt="Premium Apartment Presentation Brochure" class="w-full block md:hidden" aria-hidden="true">
+                            <img src="img/premium-apartment-brochure_300x300@2x.png" alt="Premium Apartment Presentation Brochure" class="hidden md:block md:w-48 md:h-48 lg:w-56 lg:h-56" aria-hidden="true">
+                        </div>
+                        <!-- Description -->
+                        <div class="flex flex-col md:w-[70%] text-left mt-5 md:m-0">
+                            <h4 class="header-white">Premium Apartment Presentation Brochure</h4>
+                            <p class="text-base md:text-sm lg:text-base text-justify lg:text-left mt-3">Community Quadratic Funding Round of the Hack-a-TONx DoraHacks hackathon with a total prize pool of $300,000 and 233 high-quality projects on the TON Blockchain.</p>
+                            <div class="flex flex-wrap flex-row text-slate-300 text-sm md:text-xs font-medium mt-2">
+                                <div class="badge-gray mt-2 mr-2">Adobe InDesign</div>
+                            </div>
+                            <div class="flex flex-row lg:flex-col items-end md:items-start justify-between mt-2">
+                                <div class="flex flex-wrap flex-col md:flex-row justify-start">
+                                    <a href="https://dom-mosfilm-8.ru/downloads/premium-apartment-mosfilm8-web.pdf" target="_blank" class="link-amber mt-2 mr-5">Web & Mobile &darr;</a>
+                                    <a href="https://dom-mosfilm-8.ru/downloads/premium-apartment-mosfilm8-print.pdf" target="_blank" class="link-amber mt-2 mr-5">Printable Brochure &darr;</a>
+                                </div>
+                                <div class="text-sm mt-4 md:mt-2 lg:mt-4">2021</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </section>
         <!-- Contacts -->
         <section id="contacts">
-            <div class="container mx-auto mt-32 md:mt-40">
-                <h2 class="text-2xl text-slate-200 tracking-wider">Contacts</h2>
-            </div>
-            <!-- Flex container -->
-            <div class="container ">
-
-            </div>
+            <h2 class="text-2xl text-slate-200 tracking-wider mt-24">Contacts</h2>
+            <!-- Flex block -->
         </section>
+    </div>
     </body>
 </html>
