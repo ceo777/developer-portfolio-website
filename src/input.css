@@ -23,4 +23,22 @@
     .badge-gray {
         @apply bg-gray-500/40 rounded-lg px-2 py-1;
     }
+    .hamburger-top, .hamburger-middle, .hamburger-bottom {
+        @apply absolute top-0.5 left-0 w-6 h-0.5 bg-slate-300 rotate-0 transition duration-300;
+    }
+    .hamburger-middle {
+        @apply translate-y-[7px];
+    }
+    .hamburger-bottom {
+        @apply translate-y-[14px];
+    }
+    .opened .hamburger-top {
+        @apply translate-y-[7px] rotate-45;
+    }
+    .opened .hamburger-middle {
+        @apply hidden;
+    }
+    .opened .hamburger-bottom {
+        @apply translate-y-[7px] rotate-[-45deg];
+    }
 }
