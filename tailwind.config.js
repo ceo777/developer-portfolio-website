@@ -4,6 +4,10 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
+    screens: {
+      'xs': '370px',
+      ...defaultTheme.screens,
+    },
     container: {
       padding: {
         DEFAULT: '2rem',

@@ -18,7 +18,7 @@
         @apply text-sky-500 hover:text-sky-300;
     }
     .link-amber {
-        @apply font-medium text-base md:text-sm lg:text-base text-amber-500 hover:text-amber-400 underline underline-offset-4 hover:decoration-2;
+        @apply font-medium text-sm xs:text-base md:text-sm lg:text-base text-amber-500 hover:text-amber-400 underline underline-offset-4 hover:decoration-2;
     }
     .badge-gray {
         @apply bg-gray-500/40 rounded-lg px-2 py-1;
